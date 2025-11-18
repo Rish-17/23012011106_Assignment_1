@@ -14,10 +14,10 @@ The app can import emails from various sources and process them for feature extr
 #### Import Emails
 
 - **Gmail Import**: Users can use their Google account to import emails directly from Gmail.
-<img src="https://github.com/martinszuc/phishing-emails-detection/assets/100486753/a835b65f-7025-4869-b095-ab002a7e3677" alt="Gmail Import" height="600">
+
 
 - **EML Import**: Users can import individual `.eml` files.
-<img src="https://github.com/martinszuc/phishing-emails-detection/assets/100486753/29489c64-02ca-4279-ae59-07021992cda1" alt="EML Import" height="600">
+
 
 - **MBOX Import**: Users can import `.mbox` files containing multiple emails.
 
@@ -26,7 +26,7 @@ When importing, users are asked to label the emails as `phishing` or `safe`.
 #### Email Packaging
 
 - **Email Packaging**: Users can combine multiple emails into packages for processing.
-<img src="https://github.com/martinszuc/phishing-emails-detection/assets/100486753/48a18d59-4438-4699-9ffc-7e2f25dd291c" alt="Email Packaging" height="600">
+
 
 ### Machine Learning
 
@@ -35,27 +35,26 @@ The app provides several features for machine learning, including feature extrac
 #### Feature Extraction
 
 - **Feature Extraction**: Users can extract features from emails using Python integration.
-<img src="https://github.com/martinszuc/phishing-emails-detection/assets/100486753/b2e7e604-f226-450d-9d92-cb0418f086a2" alt="Feature Extraction" height="600">
+
 
 #### Training
 
 - **Training**: Users can train the model on the extracted features.
-<img src="https://github.com/martinszuc/phishing-emails-detection/assets/100486753/4e182d17-d32d-4b26-93bb-267ec4c5cbac" alt="Training" height="600">
+
 
 #### Retraining
 
 - **Retraining**: Users can retrain the model with new data.
- <img src="https://github.com/martinszuc/phishing-emails-detection/assets/100486753/368f8a85-4a48-4bcd-91e3-ca00dc5c19cc" alt="Retraining" height="600">
+
 
 #### Model Evaluation
 
 - **Model Evaluation**: Users can evaluate the performance of the trained model.
-<img src="https://github.com/martinszuc/phishing-emails-detection/assets/100486753/ac0560df-922f-4ee4-bc8f-f7e50f0cce14" alt="Model Evaluation" height="600">
 
 ### Phishing Detection
 
 - **Phishing Detection**: Users can use the selected model to classify a single email as phishing or safe using logistic regression.
-<img src="https://github.com/martinszuc/phishing-emails-detection/assets/100486753/8a2c7223-3099-47f4-8f63-b5680b044a8b" alt="Phishing Detection" height="600">
+
 
 ### Federated Server Usage
 
@@ -64,12 +63,12 @@ The federated server handles weight management for federated learning.
 #### Endpoints
 
 - **Upload Weights**: Users can upload the local model weights.
-<img src="https://github.com/martinszuc/phishing-emails-detection/assets/100486753/2178f6cf-712e-42d1-969c-0fbf4ee116e5" alt="Weights Upload" height="600">
+
 
 - **Download Global Weights**: Users can download the globally averaged weights.
 
 - **Check Server Status**: Users can ping the server to check its status.
-<img src="https://github.com/martinszuc/phishing-emails-detection/assets/100486753/3a83af5c-910c-4bc8-ad5d-675a95baf7fe" alt="Server Status" height="600">
+
 
 ## Features
 - **Google Login**: Users can log in using their Google account.
