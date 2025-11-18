@@ -4,67 +4,7 @@ This project aims to detect phishing emails using federated learning for OS Andr
 
 ![fl](https://github.com/martinszuc/phishing-emails-detection/assets/100486753/7965ae5e-9ff2-4d95-a1f4-9390d5733c72)
 
-## Table of Contents
 
-- [Installation](#installation)
-  - [Android App](#android-app)
-  - [Federated Server](#federated-server)
-- [Usage](#usage)
-  - [Email Processing](#email-processing)
-  - [Machine Learning](#machine-learning)
-  - [Phishing Detection](#phishing-detection)
-  - [Federated Server Usage](#federated-server-usage)
-- [Features](#features)
-- [App Architecture](#architecture)
-- [Python Component](#python-component)
-  - [Feature Finders and Detection Strategy](#feature-finders-and-detection-strategy)
-- [Contributing](#contributing)
-- [License](#license)
-
-
-## Installation
-### Android App
-
-To install and set up the Android application, follow these steps:
-
-1. **Clone the repository:**
-   ```bash
-    git clone https://github.com/your-username/phishing-emails-detection.git
-    ```
-2. Install the app through Android Studio:
-
-3. Open the cloned project in Android Studio.
-4. Set up debug key:
-  - Open `File` -> `Project Structure`.
-  - Navigate to `SDK Location` -> `Debug keystore`.
-  - Set the path to the `debug.keystore` file in the root directory.
-5. Build and run the app:
-  - Click `Run` -> `Run 'app'`.
-  - Choose your device or an emulat
-Note: This app is currently in development mode and limited to test users.
-
-For test access, contact [matoszuc@gmail.com](mailto:matoszuc@gmail.com).
-
-### Federated Server
-
-To set up the federated server, follow these steps:
-
-#### Prerequisites
-
-- Python 3.8
-- pip3
-
-1. Create and activate a Python virtual environment:
-   ```sh
-     cd server
-     python3.8 -m venv env_server
-     source ./env_server/bin/activate
-   ```
-2. Install dependencies and run the server:
-   ```
-     pip install -r requirements.txt
-     python server.py
-   ```
 ## Usage
 
 ### Email Processing
@@ -185,23 +125,6 @@ The project is structured to separate concerns and ensure modularity. Below is a
   - **MainActivity**: Main activity of the application.
   - **Utils**: Utility classes and functions.
  
-## Python Component
-### Feature Finders and Detection Strategy
-
-Our phishing detection uses several feature finders, each responsible for extracting specific elements from emails that are commonly used by phishing attempts:
-
-- **HTMLFormFinder**: Identifies HTML forms within emails, a common phishing vector to solicit user information.
-- **IFrameFinder**: Detects the use of IFrames, potentially embedding malicious content invisibly.
-- **FlashFinder**: Searches for Flash content links, which could execute harmful scripts.
-- **AttachmentFinder**: Counts email attachments, which may contain malicious payloads.
-- **HTMLContentFinder**: Looks for specific HTML content indicative of phishing.
-- **URLsFinder**: Extracts and evaluates URLs found within emails for malicious links.
-- **ExternalResourcesFinder**: Identifies external resources linked within emails that could be harmful.
-- **JavascriptFinder**: Detects JavaScript, which can be used in phishing for malicious activities.
-- **CssFinder**: Searches for custom CSS that might be used to disguise phishing attempts.
-- **IPsInURLs**: Checks for IP addresses in URLs, a technique used to bypass domain name suspicion.
-- **AtInURLs**: Identifies '@' symbols in URLs, which can be a sign of deceptive links.
-- **EncodingFinder**: Analyzes the content encoding for signs of obfuscation or unusual patterns.
 
 ### Acknowledgments and References
 
@@ -214,16 +137,13 @@ The data used for training the phishing detection model were sourced from two ma
 - [Phishing Pot Dataset](https://github.com/rf-peixoto/phishing_pot) by rf-peixoto (converted .eml to mbox using scripts in this repo)
 - [Phishing Dataset](https://monkey.org/~jose/phishing/) by jose at monkey.org (downloaded mbox files)
 
-## Contributing
+<img width="277" height="489" alt="Screenshot 2025-11-18 214411" src="https://github.com/user-attachments/assets/b741f737-cfe0-429f-906b-cf9970bd66cc" />
 
-If you want to contribute to this project, please follow these guidelines:
+<img width="274" height="487" alt="Screenshot 2025-11-18 214423" src="https://github.com/user-attachments/assets/a6719259-c92b-433d-8227-d8ddf1a0b01a" />
 
-1. Fork the repository.
-2. Create a new branch.
-3. Make your changes and commit them.
-4. Push your changes to your fork.
-5. Create a pull request.
+<img width="271" height="489" alt="Screenshot 2025-11-18 214430" src="https://github.com/user-attachments/assets/13dfac21-c8fa-4385-96a5-3dc9ebf1256c" />
 
-## License
+<img width="410" height="733" alt="Screenshot 2025-11-18 210830" src="https://github.com/user-attachments/assets/809a1068-a82a-42b9-b45d-ec18d949cf63" />
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+
+
